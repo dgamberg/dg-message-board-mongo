@@ -63,6 +63,10 @@ app.delete('/data', function(req,res){
 
 
 });
+app.get("/admin", function(req,res){
+    var file = req.params[0] || "/views/admin.html";
+    res.sendFile(path.join(__dirname, "./public", file));
+});
 
 app.get("/*", function(req,res){
     var file = req.params[0] || "/views/index.html";

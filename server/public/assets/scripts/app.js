@@ -2,14 +2,11 @@ $(document).ready(function(){
    $("#search").submit(function(event){
       event.preventDefault();
       var values = {};
-
       $.each($(this).serializeArray(), function(i, field){
          values[field.name] = field.value;
       });
-
       getData(values);
    });
-
    $("#addMessageForm").submit(addMessage);
    $("#messageContainer").on('click', '.delete', deletePerson);
 
@@ -30,11 +27,9 @@ function getData(values){
 function addMessage(){
    event.preventDefault();
    var values = {};
-
    $.each($(this).serializeArray(), function(i, field){
       values[field.name] = field.value;
    });
-
    $.ajax({
       type: "POST",
       url: "/data",
@@ -51,9 +46,6 @@ function clearTheForm(){
 }
 function deletePerson(){
    var deletedId = {"id" : $(this).data("id")};
-
-   console.log("Meaningful Log: ", deletedId);
-
    $.ajax({
       type: "DELETE",
       url: "/data",
@@ -70,8 +62,8 @@ function updateDOM(data){
 
    for(var i = 0; i < data.length; i++){
       var el = "<div class='message-container well'>" +
-                  "<div class='button-container'><button class='delete btn btn-danger' data-id='" +
-                  data[i]._id + "'>X</button></div>" +
+                  //"<div class='button-container'><button class='delete btn btn-danger' data-id='" +
+                  //data[i]._id + "'>X</button></div>" +
                   "<p class='message-name'>" + data[i].name + "</p>" +
                   "<p class='message-body'>" + data[i].message.toString() + "</p>" +
                "</div>";
