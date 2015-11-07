@@ -1,10 +1,8 @@
 var express = require('express');
 var app = express();
 
-
 var path = require('path');
 var bodyParser = require('body-parser');
-
 
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
