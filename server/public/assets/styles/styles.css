@@ -1,0 +1,91 @@
+body{
+    background-image: url(../images/corkboard.png);
+}
+.message-container {
+    color: #000;
+    background-color: rgba(200, 226, 24, 0.61);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #333;
+    border: 0px;
+    padding: 20px;
+    float: left;
+    min-width: 265px;
+    min-height: 190px;
+}
+form#addSomeone {
+    margin-bottom: 25px;
+}
+
+.message-name{
+    width: 225px;
+}
+.message-body{
+    width: 225px;
+}
+.form-heading-text {
+    color: #000;
+}
+.main-heading-text {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 40px;
+}
+#enterMessage {
+    background-color: rgba(200, 226, 24, .00);
+    width: 200px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0px;
+}
+#enterFirstName {
+    width: 200px;
+    background-color: rgba(200, 226, 24, 0.00);
+    border: 0px;
+}
+#entryForm {
+    background-color: rgba(200, 226, 24, 0.61);
+    margin-bottom: 10px;
+    width: 235px;
+    float: left;
+    margin-right: 11px;
+}
+
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #000;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 990px;
+    }
+}
+.container{
+    padding: 0px;
+}
+
+.glyphicon {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: -5px;
+    margin-right: 5px;
+}
+.button-container{
+    float: right;
+}
