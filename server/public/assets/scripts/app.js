@@ -9,7 +9,6 @@ $(document).ready(function(){
    });
    $("#addMessageForm").submit(addMessage);
    $("#messageContainer").on('click', '.delete', deletePerson);
-
    getData();
 });
 
