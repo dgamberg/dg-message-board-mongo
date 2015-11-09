@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-mongoose.connect('mongodb://dg-message-board-mongo:dg-message-board-mongo@ds037990.mongolab.com:37990/dg-message-board-mongo');
+mongoose.connect('mongodb://dg-message-board:dg-message-board@ds037990.mongolab.com:37990/dg-message-board');
 mongoose.model('Message', new Schema({"name": String, "message": String}, {collection: 'messages'}));
 var Message = mongoose.model('Message');
 
